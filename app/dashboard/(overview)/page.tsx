@@ -6,6 +6,12 @@ import { lusitana } from '@/app/ui/fonts';
 import CardWrapper from '@/app/ui/dashboard/cards';
 import { Suspense } from 'react';
 import { LatestInvoicesSkeleton, RevenueChartSkeleton, CardSkeleton } from '@/app/ui/skeletons';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Home',
+};
+
 
 export default async function Page() {
     // const { numberOfCustomers, numberOfInvoices, totalPaidInvoices, totalPendingInvoices } = await fetchCardData();
